@@ -1,9 +1,9 @@
 # Twit Buddy
 
 ## Overview
+Twitter following check, whether if you two are following each other or who does and who does not.
 
 ![Twit Buddy](http://imgur.com/RuL3Y.png)
-Twitter following check, whether if you two are following each other or who does and who does not.
 
 * *Demo*: [http://twitbuddy.herokuapp.com/](http://twitbuddy.herokuapp.com/)
 * *Feedback, suggestions, requests and more* : vinhnguyen2308@gmail.com
