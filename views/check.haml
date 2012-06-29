@@ -1,0 +1,36 @@
+/ .message.info
+/ 	Relationship result
+
+%h2 following each other?
+%a{:href => "http://twitter.com/#{@user1} ", :target => "_blank"}
+	@#{@user1} 
+= @following1 ? "follows" : "does not follow"
+%a{:href => "http://twitter.com/#{@user2}", :target => "_blank"}
+	@#{@user2}
+%code and
+%a{:href => "http://twitter.com/#{@user2} ", :target => "_blank"}
+	@#{@user2} 
+= @following2 ? "follows" : "does not follow"
+%a{:href => "http://twitter.com/#{@user1}", :target => "_blank"}
+	@#{@user1}
+
+%br/
+%h2 locations
+%a{:href => "http://twitter.com/#{@user1}", :target => "_blank"}
+	@#{@user1}
+%p is from: #{@location1},
+%code meanwhile... 
+%a{:href => "http://twitter.com/#{@user2}", :target => "_blank"}
+	@#{@user2}
+%p is from: #{@location2}
+
+%br/
+%h2 recent tweets
+%a{:href => "http://twitter.com/#{@user1}", :target => "_blank"}
+	@#{@user1}
+%blockquote 
+	= @recent_tweet1
+%a{:href => "http://twitter.com/#{@user2}", :target => "_blank"}
+	@#{@user2}
+%blockquote 
+	= @recent_tweet2
