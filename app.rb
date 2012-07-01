@@ -3,6 +3,7 @@ require 'rubygems'
 require 'twitter'
 require 'sinatra'
 require 'haml'
+require "newrelic_rpm"
 
 # Twitter auth
 Twitter.configure do |config|
