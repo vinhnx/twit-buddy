@@ -1,6 +1,6 @@
 # Twit Buddy
 
-[![Build Status](https://secure.travis-ci.org/[vinhnx]/[twit-buddy].png)](http://travis-ci.org/[vinhnx]/[twit-buddy])
+[![Build Status](https://secure.travis-ci.org/vinhnx/twit-buddy.png)](https://secure.travis-ci.org/vinhnx/twit-buddy.png)
 
 ## Overview
 Twitter following check, whether if you two are following each other or who does and who does not.
