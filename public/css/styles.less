@@ -211,7 +211,7 @@ footer {
 
 // Prepend Input - @
 // -----------------
-.input-prepend .add-on, .input-prepend .btn {
+.input-prepend .add-on {
 	margin: 0px;
 	display: inline-block;
 	width: 2.5em;
@@ -252,6 +252,19 @@ footer {
 	#goBtn{
 		height: 20%;
 	}
+	.input-prepend .add-on, .input-prepend .btn {
+		height: 5px;
+		line-height: 5px;
+	}
+	#check {
+		#leTxt1, #leTxt2 {
+			height: 31px;
+			width: 90%;
+		}
+		#leTxt2 {
+			width:80%;
+		}
+	}
 }
 
 @media only screen and (min-width: 480px) {
@@ -261,17 +274,42 @@ footer {
 			margin: 0 0 (@em / 2) 0;
 		}
 	}
+	.input-prepend .add-on, .input-prepend .btn {
+		height: 35px;
+		line-height: 10px;
+	}
+	.input-prepend {
+		margin-left: -.5em;
+	}
+	#check {
+		#leTxt1, #leTxt2 {
+			height: 35px;
+			width: 35%;
+		}
+	}
 }
 @media only screen and (min-width: 600px) {
+	.input-prepend .add-on, .input-prepend .btn {
+		height: 45px;
+		line-height: 20px;
+	}
 	#check {
-		font-size: 110%;
-		margin: 0 0 (@em / 2) 0;
+		#leTxt1, #leTxt2 {
+			height: 45.5px;
+		}
 	}
 }
 @media only screen and (min-width: 758px) {
+	.input-prepend .add-on, .input-prepend .btn {
+		height: 55px;
+		line-height: 27px;
+	}
 	#check {
 		font-size: 140%;
 		margin: 0 0 (@em / 2) 0;
+		#leTxt1, #leTxt2 {
+			height: 55.7px;
+		}
 	}
 }
 
