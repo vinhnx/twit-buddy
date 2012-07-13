@@ -1,8 +1,9 @@
 /*--------------------
 --- import stuffs ----
 --------------------*/
-@import "normalize.less";
-@import "classes.less";
+@import "normalize";
+@import "classes";
+
 /*--------------------
 ------- define -------
 --------------------*/
@@ -36,13 +37,13 @@
 @baseFontsize: 13px;
 @font1: 'Fredoka One';
 @font2: 'Pacifico';
-
+@baseFontfam: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 /*--------------------
 ------- build -------
 --------------------*/
 * {
 	.box-sizing(border-box);
-	.transition-duration(.5s);
+	.transition-duration(.150s);
 }
 
 ::-moz-selection { background: @cream; color: @black; text-shadow: none; }
@@ -51,20 +52,15 @@
 html {
 	text-rendering: optimizeLegibility;
 	height: 100%;
-	// overflow-y: scroll;
-	background: #fc3 ;
-	// background-color: @pl5;
-	// .animation;
+	background: @pl5;
 }
 body {
 	width: 80%;
     margin: 0 auto;
-	// background: lighten(@black,10%);
-	// background: url(../img/denim.png) repeat;
 	color: lighten(@black,100%);
 	text-shadow: 0pt 2pt 0pt @black;
 	font-size: @baseFontsize;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: @baseFontfam;
 	line-height: @em + 0.5;
 }
 
@@ -89,6 +85,10 @@ a {
 		color: @pl2;
 		.transition-duration(.5s);
 	}
+	&:not(#github):active {
+		top: 1px;
+		position: relative;
+	}
 }
 
 header {
@@ -101,7 +101,7 @@ header {
 			font-weight: 700;
 			font-size: @em+1;
 			text-transform: capitalize;
-			font-family: @font1;
+			font-family: @font1, @baseFontfam;
 			text-shadow: 0 3pt 0 rgba(0, 0, 0,.8);
 			&:hover{
 				background: none;
@@ -111,7 +111,7 @@ header {
 			}
 		}
 		small{
-			font-family: @font2, 'Helvetica Neue', Helvetica, Arial;
+			font-family: @font2, @baseFontfam;
 			color: @cream;
 		}
 	}
@@ -124,7 +124,6 @@ nav {
 		li {
 			display: inline-block;
 			margin-left: -4px;
-			// background: url(../img/topnavBg.png) repeat-x center center;
 			a {
 				font-size: (@baseFontsize * 1.5);
 				text-transform: uppercase;
@@ -142,15 +141,12 @@ nav {
 }
 
 footer {
-	// position: absolute;
-	// bottom: @em;
-	// right: @em;
 	margin: 0 0 (@em+1) 0;
 	line-height: @em;
 	small{
 		background: @black;
 		text-transform: capitalize;
-		font-family: @font1;
+		font-family: @baseFontfam;
 		text-align: center;
 		text-shadow: 0pt 1pt 0pt @black;
 	}
@@ -159,7 +155,7 @@ footer {
 
 #main-container {
 	>h2{
-		font-family: @font2, @font1, 'Helvetica Neue', Helvetica, Arial;
+		font-family: @font2, @font1, @baseFontfam;
 		font-size: @em+4;
 		color: #eaeaea;
 		line-height: 1.25em;
@@ -167,32 +163,28 @@ footer {
 	}	
 	text-align: center;
 	padding: @em;
-	// margin-bottom: @em;
-	background: @pl5;
+	background: @pl4;
 	height: auto;
 	.border-radius(7px);
-	// .box-shadow(inset, 0, 0, 7px, @black);
 	.box-shadow(0, 0, 7px, @black);
 }
 
 #check {
 	font-size: 2 * @percentage;
-	// margin: @em + 0.5;
 	#leTxt1, #leTxt2{
 		outline: none;
-		margin: .5em (@em - 0.2);
-		padding: (@em - 0.5) @em;
-		border: solid 1px #000;
-		.border-radius(5px);
-		.box-shadow(inset, 0, 0, 10px, #111);
+		padding: 0.5em @em;
+		border: solid 1px #ddd;
+		height: 59px;
+		box-shadow: inset 1px 1px 8px #adadad;
+		border: solid 1px #aaa;
+		border-left: none;
+		background: #fcfcfc;
+		.border-radius( 0 3px 3px 0);
 		&:hover, &:focus, &:active{
-			border-color: @pl1;
-		    box-shadow:0 0 10px @pl1;
+			background: #fff;
+			box-shadow: 0 0 11px @cream;
 		}
-		// &:focus, &:active{
-		// 	outline:none;
-		//     padding-right: (@em + 3);
-		// }
 	}
 
 	#goBtn{
@@ -204,7 +196,7 @@ footer {
 		background: @hotPink;
 		color: @white;
 		text-transform: uppercase;
-		font-family: @font1;
+		font-family: @font1, @baseFontfam;
 		.border-radius();
 		&:hover{
 			background: darken(@hotPink, 10%);
@@ -215,6 +207,28 @@ footer {
 		}
 	}
 	small{ font-size: 50%;}
+}
+
+// Prepend Input - @
+// -----------------
+.input-prepend .add-on, .input-prepend .btn {
+	margin: 0px;
+	display: inline-block;
+	width: 2.5em;
+	height: 57px;
+	min-width: 16px;
+	padding: 15px 5px;
+	font-weight: normal;
+	line-height: 25px;
+	text-align: center;
+	text-shadow: 0 1px 0 #fff;
+	vertical-align: top;
+	background-color: #eee;
+	// border: 1px solid #ddd;
+	color: #999;
+	&:first-child {
+		.border-radius(3px 0 0 3px);
+	}
 }
 
 /*--------------------

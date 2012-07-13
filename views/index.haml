@@ -1,13 +1,10 @@
 %h2 Enter two twitter username
 %form{ :id => "check",:method => "get", :action => "/check"}
-	@<input id="leTxt1" type="text" name="user1" placeholder="Yours maybe..." autofocus required x-webkit-speech/> 
-	%code and  &nbsp;
-
-	@<input id="leTxt2" type="text" name="user2" placeholder="Your friends' maybe..." required x-webkit-speech/> 
-
+	<div class="input-prepend"><span class="add-on">@</span><input id="leTxt1" type="text" name="user1" placeholder="Yours maybe..." autofocus required x-webkit-speech/> <code>and</code> 
+	<span class="add-on" style="border-radius: 3px 0 0 3px">@</span><input id="leTxt2" type="text" name="user2" placeholder="Your friends' maybe..." required x-webkit-speech/></div>
 	%br/
 	%small *Tip: Press the microphone to enable text-to-speech feature.
-	%input{ :id => "goBtn", :type => "submit", :value =>"Go"}
+	%input{ :id => "goBtn", :type => "submit", :value =>"Go →"}
 .clearix
 	%a.twitter-share-button{"data-hashtags" => "ruby", "data-via" => "vinhnx", :href => "https://twitter.com/share"} Tweet
 	.g-plusone{"data-size" => "medium"}
