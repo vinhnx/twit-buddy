@@ -7,10 +7,10 @@ require "newrelic_rpm"
 
 # Twitter auth
 Twitter.configure do |config|
-  config.consumer_key = 'xxx'
-  config.consumer_secret = 'xxx'
-  config.oauth_token = 'xxx-xxx'
-  config.oauth_token_secret = 'xxx'
+  config.consumer_key = 'xxxxxx'
+  config.consumer_secret = 'xxxxxx'
+  config.oauth_token = 'xxx-xxxxxx'
+  config.oauth_token_secret = 'xxxxxx'
 end
 
 # define stuffs
