@@ -6,10 +6,10 @@ require 'haml'
 
 # Twitter auth
 Twitter.configure do |config|
-  config.consumer_key = 'xxx'
-  config.consumer_secret = 'xxx'
-  config.oauth_token = 'xxx-xxx'
-  config.oauth_token_secret = 'xxx'
+  config.consumer_key = 'DZDpYsau2bElVwwsLicAkA'
+  config.consumer_secret = '7hsKYBavZDXPnNMlFYY20bxG3FQBfDByBoat4k74'
+  config.oauth_token = '374907349-LPlJYbe7Q6Zye2EoDDsVdDQZlaIZxEMuAgs1pqXN'
+  config.oauth_token_secret = 'ab7gl6SWsbhvXIkdgRtJzlnScpx45u81nQMR3C9fbY'
 end
 
 # define stuffs
@@ -29,14 +29,14 @@ end
 def location_u2(screen_name)
 	location = Twitter.user(screen_name).location
 end
-  
+
   # most recent tweet
 def recent_tweet(screen_name)
   recent_tweet = Twitter.user_timeline(screen_name).first.text
 end
 
 #page binding
-get '/' do  
+get '/' do
   # haml
   # default index.haml
   haml :index

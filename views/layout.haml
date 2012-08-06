@@ -17,17 +17,16 @@
 		#fb-root
 		#header-container
 			%header
-				%h1 
+				%h1
 					%a#title{:href => "/"}twit buddy
 					%br/
 					%small simple Twitter following checking app
 
 		#main-container
 			=yield
-		
 		%footer
 			%small
-				%p #{Time.now.month}/#{Time.now.year}. Twit Buddy. Version 1.06. A mini weekend project By <a href="//nxvĩnh.vn" title="Hire me">Vinh Nguyen</a>. 
+				%p #{Time.now.month}/#{Time.now.year}. Twit Buddy. Version 1.06. A weekend project By <a href="//nxvĩnh.vn" title="Hire me">Vinh Nguyen</a>.
 				%p Crafted with <a href="//sinatrarb.com" target="_blank">Sinatra</a>, <a href="//haml-lang.com" target="_blank">Haml</a>, <a href="//lesscss.org" target="_blank">Less</a>, <a href="//jquery.com" target="_blank">JQuery</a>, <a href="//html5rocks.com" target="_blank">HTML5</a> and <a href="//ruby-lang.org" target="_blank">Ruby</a>. *Text-to-speech feature is currently only avalable to Webkit (Chrome, Safari) browser*; <abbr title="Responsive Web Design"><a href="http://twitter.com/search?q=RWD" target="_blank">#RWD</a></abbr> enabled.
 
 		%a#github{:href => "https://github.com/vinhnx/twit-buddy", :target => "_blank"}
