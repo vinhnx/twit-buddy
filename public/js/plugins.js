@@ -62,3 +62,11 @@ eval(function(p, a, c, k, e, r) {
                 });
               }
             });
+// goBtn
+(function() {
+	$('button#goBtn').click(function() {
+		$(this).text('please wait...');
+		// $(this).css('display', 'none');
+        $('<img>').attr('src', '../img/loading.gif').insertAfter($(this));
+	});
+})();
