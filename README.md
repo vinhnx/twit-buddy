@@ -21,7 +21,6 @@ A simpple app to check following status, & to check whether if you two are follo
 ### Version 1.04:
 * Redesign
 * Improve speed by reducing script load.
-* Remove jQuery Real-shadow plugin to increase performance.
 * Repsonsive Web Design #RWD enabled.
 
 ## Todos:
