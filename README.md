@@ -17,6 +17,7 @@ A simpple app to check following status, & to check whether if you two are follo
 ## Changlogs:
 ### Version 1:
 * First deploy.
+
 ### Version 1.04:
 * Redesign
 * Improve speed by reducing script load.
