@@ -39,3 +39,8 @@
 [08/04/12 16:57:48 +0700 VinhNguyen-PC (6804)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
 [08/04/12 16:57:48 +0700 VinhNguyen-PC (6804)] INFO : New Relic Ruby Agent 3.4.0.1 Initialized: pid = 6804
 [08/04/12 16:57:48 +0700 VinhNguyen-PC (6804)] INFO : Agent Log at F:/RubyApps/TwitBuddy/log/newrelic_agent.log
+[08/06/12 11:20:35 +0700 VinhNguyen-PC (5508)] INFO : Dispatcher: sinatra
+[08/06/12 11:20:35 +0700 VinhNguyen-PC (5508)] INFO : Application: My Application
+[08/06/12 11:20:35 +0700 VinhNguyen-PC (5508)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[08/06/12 11:20:35 +0700 VinhNguyen-PC (5508)] INFO : New Relic Ruby Agent 3.4.0.1 Initialized: pid = 5508
+[08/06/12 11:20:35 +0700 VinhNguyen-PC (5508)] INFO : Agent Log at F:/RubyApps/TwitBuddy/log/newrelic_agent.log
