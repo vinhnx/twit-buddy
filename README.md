@@ -23,6 +23,10 @@ A simpple app to check following status, & to check whether if you two are follo
 * Improve speed by reducing script load.
 * Repsonsive Web Design #RWD enabled.
 
+### Version 1.06:
+* Add [Sharrre Social Plugins](http://sharrre.com) for Social Network sharing.
+* Fix form bugs.
+
 ## Todos:
 * Adding more features...
 * Tweak performance...
