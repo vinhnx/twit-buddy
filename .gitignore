@@ -20,3 +20,5 @@ doc/
 /pkg
 /doc/api
 /Gemfile.lock
+
+newrelic.yml

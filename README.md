@@ -1,7 +1,7 @@
 # Twit Buddy
 
 ## Overview
-Twitter following check, whether if you two are following each other or who does and who does not.
+A simpple app to check following status, & to check whether if you two are following each other or who does and who does not.
 
 ![Twit Buddy](http://imgur.com/RuL3Y.png)
 
@@ -14,6 +14,20 @@ Twitter following check, whether if you two are following each other or who does
 * Return each user's locations.
 * Return each user's most recent tweet.
 
+## Changlogs:
+### Version 1:
+* First deploy.
+### Version 1.04:
+* Redesign
+* Improve speed by reducing script load.
+* Remove jQuery Real-shadow plugin to increase performance.
+* Repsonsive Web Design #RWD enabled.
+
+## Todos:
+* Adding more features...
+* Tweak performance...
+
+
 ## What inside
 
 * HTML5 text-to-speech feature.
@@ -22,11 +36,11 @@ Twitter following check, whether if you two are following each other or who does
 * Sinatra 1.3.0.
 * Ruby.
 * Twitter gem.
-* jQuery: [Real Shadow plugin](http://indamix.github.com/real-shadow/) 
 
 ### How-to-use
 
-This app requires Ruby and Sinatra. To install Sinatra, simply run:
+This app requires Ruby and Sinatra to be install. 
+To install Sinatra, simply run:
 
 `gem install sinatra`
 
