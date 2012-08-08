@@ -1,9 +1,9 @@
-%h2 Enter two twitter username
+%h2 Enter two twitter usernames
 %form{ :id => "check",:method => "get", :action => "/check"}
 	<div class="input-prepend"><span class="add-on">@</span><input id="leTxt1" type="text" name="user1" placeholder="eg: twitter" autofocus required x-webkit-speech/> <code>and</code>
 	<span class="add-on" style="border-radius: 3px 0 0 3px">@</span><input id="leTxt2" type="text" name="user2" placeholder="eg: facebook" required x-webkit-speech/></div>
 	%br/
-	%small *Tip: Press the microphone icon in each text-filed to use text-to-speech feature.
+	%small *Tip: Press the microphone icon in each text-fields to use text-to-speech feature.
 	%button{ :id => "goBtn", :type => "submit"}GO
 .clearix
 	/ %a.twitter-share-button{"data-hashtags" => "ruby", "data-via" => "vinhnx", :href => "https://twitter.com/share"} Tweet
