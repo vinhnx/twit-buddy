@@ -14,7 +14,7 @@ A simpple app to check following status, & to check whether if you two are follo
 * Return each user's locations.
 * Return each user's most recent tweet.
 
-## Changlogs:
+## Changlogs
 ### Version 1:
 * First deploy.
 
