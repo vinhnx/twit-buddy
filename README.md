@@ -1,4 +1,10 @@
 # Twit Buddy
+	  ______         _ __     ____            __    __     
+	 /_  __/      __(_) /_   / __ )__  ______/ /___/ /_  __
+	  / / | | /| / / / __/  / __  / / / / __  / __  / / / /
+	 / /  | |/ |/ / / /_   / /_/ / /_/ / /_/ / /_/ / /_/ / 
+	/_/   |__/|__/_/\__/  /_____/\__,_/\__,_/\__,_/\__, /  
+	                                              /____/   
 
 ## Overview
 A simpple app to check following status, & to check whether if you two are following each other or who does and who does not.
