@@ -11,8 +11,9 @@ A simpple app to check following status, & to check whether if you two are follo
 
 ![Twit Buddy](http://imgur.com/RuL3Y.png)
 
-* *Demo*: [http://twitbuddy.herokuapp.com/](http://twitbuddy.herokuapp.com/)
-* *Feedback, suggestions, requests and more* : vinhnguyen2308@gmail.com
+* [http://twitbuddy.herokuapp.com/](DEMO)
+* [mailto:vinhnguyen2308@gmail.com](Feedback, suggest, bugs inform, ideas, or just to say hi ...)
+* [http://twitter.com/vinhnx](@vinhnx)
 
 ## Features
 
@@ -21,8 +22,8 @@ A simpple app to check following status, & to check whether if you two are follo
 * Return each user's most recent tweet.
 
 ## Changlogs
-### Version 1:
-* First deploy.
+### Version 1.0:
+* First deployment.
 
 ### Version 1.04:
 * Redesign
@@ -52,23 +53,33 @@ A simpple app to check following status, & to check whether if you two are follo
 This app requires Ruby and Sinatra to be install. 
 To install Sinatra, simply run:
 
-`gem install sinatra`
+`$ gem install sinatra`
 
 Haml is for templating:
 
-`gem install haml`
+`$ gem install haml`
 
-and Twitter, of course:
+and Twitter gem, of course:
 
-`gem install twitter`
+`$ gem install twitter`
 
-Fork this repo, then clone it to your local machine.
+You can either download this repo, or clone it automatically with this command:
 
-`git clone git://github.com/vinhnx/twit-Buddy.git`
+`git clone git://github.com/vinhnx/twit-buddy.git`
 
-> Register An App at [Twitter Developers Center](https://dev.twitter.com/apps) to obtain your API keys, then add it to app.rb config.
+> Register An App at [Twitter Developers Center](https://dev.twitter.com/apps) to obtain your API keys, then add required details to your `app.rb` config.
 
-...then you are ready to go :)
+First, point to your app dir, 
+
+`$ cd twit-buddy`
+
+(Optional) Required gems are already included, but if your want to add/remove/edit any/all of them, be sure to edit your `Gemfile`, then run this to install gems
+
+`$ bundle install`
+
+... execute it won't happen :)
+
+`$ ruby app.rb`
 
 > For most convenient Heroku deployment, use [Heroku Toolbelt](https://toolbelt.heroku.com). 
 > Read https://devcenter.heroku.com/articles/ruby for a complete how-to-deploy guide.
