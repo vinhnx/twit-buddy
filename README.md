@@ -11,9 +11,9 @@ A simpple app to check following status, & to check whether if you two are follo
 
 ![Twit Buddy](http://imgur.com/RuL3Y.png)
 
-* [http://twitbuddy.herokuapp.com/](DEMO)
-* [mailto:vinhnguyen2308@gmail.com](Feedback, suggest, bugs inform, ideas, or just to say hi ...)
-* [http://twitter.com/vinhnx](@vinhnx)
+* [DEMO](http://twitbuddy.herokuapp.com/)
+* [Feedback, suggest, bugs inform, ideas, or just to say hi ...](mailto:vinhnguyen2308@gmail.com)
+* [@vinhnx](http://twitter.com/vinhnx	)
 
 ## Features
 
