@@ -53,40 +53,40 @@ A simpple app to check following status, & to check whether if you two are follo
 This app requires Ruby and Sinatra to be install. 
 To install Sinatra, simply run:
 
-`gem install sinatra`
+`$ gem install sinatra`
 
 Haml is for templating:
 
-`gem install haml`
+`$ gem install haml`
 
 and Twitter gem, of course:
 
-`gem install twitter`
+`$ gem install twitter`
 
 You can either download this repo, or clone it automatically with this command:
 
-`git clone git://github.com/vinhnx/twit-buddy.git`
+`$ git clone git://github.com/vinhnx/twit-buddy.git`
 
 > Register An App at [Twitter Developers Center](https://dev.twitter.com/apps) to obtain your API keys, then add required details to your `app.rb` config.
 
 First, point to your app dir, 
 
-`cd twit-buddy`
+`$ cd twit-buddy`
 
 (Optional) Required gems are already included, but if your want to add/remove/edit any/all of them, be sure to edit your `Gemfile`, then run this to install gems
 
 * ## NOTE:
 You must have `bundle` gem pre-install to execute. If you haven't had this yet, run this code
 
-`gem install bundle`
+`$ gem install bundle`
 
 then bundle it
 
-`bundle install`
+`$ bundle install`
 
 ... execute it won't happen :)
 
-`ruby app.rb`
+`$ ruby app.rb`
 
 > For most convenient Heroku deployment, use [Heroku Toolbelt](https://toolbelt.heroku.com). 
 > Read https://devcenter.heroku.com/articles/ruby for a complete how-to-deploy guide.
