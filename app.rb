@@ -17,16 +17,14 @@ def twitter_id(screen_name)
   Twitter.user(screen_name).id
 end
 
+  # like it sound
 def is_following?(a,b)
   followers = Twitter.follower_ids(twitter_id(b)).ids
   followers.include?(twitter_id(a))
 end
-
-def location_u1(screen_name)
-  location = Twitter.user(screen_name).location
-end
-
-def location_u2(screen_name)
+  
+  # user's location
+def location_u(screen_name)
   location = Twitter.user(screen_name).location
 end
 
@@ -51,8 +49,8 @@ get '/check' do
   @following2 = is_following?(@user2, @user1)
 
   # locations detect
-  @location1 = location_u1(@user1)
-  @location2 = location_u2(@user2)
+  @location1 = location_u(@user1)
+  @location2 = location_u(@user2)
 
   # latest tweet
   @recent_tweet1 = recent_tweet(@user1)
