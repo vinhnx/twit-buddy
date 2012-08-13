@@ -6,10 +6,10 @@ require 'haml'
 
 # Twitter auth
 Twitter.configure do |config|
-  config.consumer_key = 'xxxxxxx'
-  config.consumer_secret = 'xxxxxxx'
-  config.oauth_token = 'xxxxxxx'
-  config.oauth_token_secret = 'xxxxxxx'
+  config.consumer_key = 'xxx'
+  config.consumer_secret = 'xxx'
+  config.oauth_token = 'xxx'
+  config.oauth_token_secret = 'xxx'
 end
 
 # define stuffs
