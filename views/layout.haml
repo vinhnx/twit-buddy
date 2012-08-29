@@ -9,12 +9,11 @@
 		%meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
 		%title{:dir => "ltr"} Twit Buddy | Check if you two are (still) following each other.
 		%meta{:content => "width=device-width, initial-scale=1.0; maximum-scale=1.0;", :name => "viewport"}
-		%link{:href => "/favicon.ico", :rel => "icon"}
-		%link{:rel => "stylesheet", :href => "/css/styles.css"}
-		%link{:rel => "stylesheet", :href => "//fonts.googleapis.com/css?family=Fredoka+One|Pacifico"}
-		
+		%link{:href => "/favicon.ico", :rel => "icon"}/
+		%link{:rel => "stylesheet", :href => "/css/styles.css"}/
+		%link{:rel => "stylesheet", :href => "//fonts.googleapis.com/css?family=Fredoka+One|Pacifico"}		
 		%script{:src => "/js/modernizr-2.5.3-respond-1.1.0.min.js"}
-	%body
+	%body.holmes-debug
 		#header-container
 			%header
 				%h1
@@ -23,7 +22,6 @@
 					%small ... for your curiousity
 		#main-container
 			=yield
-
 		%footer
 			%small
 				%p #{Time.now.month}/#{Time.now.year}. Twit Buddy. Version 1.06. <a href="http://twitter.com/TwitBuddy7" target="_blank">@TwitBuddy</a> on Twitter. A weekend project By <a href="//vinhnx.github.com" target="_blank">Vinh Nguyen</a>.
