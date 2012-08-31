@@ -25,16 +25,16 @@ A simpple app to check following status, & to check whether if you two are follo
 ### Version 1.0:
 * First deployment.
 
-### Version 1.04:
+### Version 1.01:
 * Redesign
 * Improve speed by reducing script load.
 * Repsonsive Web Design #RWD enabled.
 
-### Version 1.06:
+### Version 1.02:
 * Add [Sharrre Social Plugins](http://sharrre.com) for Social Network sharing.
 * Fix form bugs.
 
-### Verion 1.19 (NEW!):
+### Verion 1.03 (NEW!):
 * Cool new `Fork me on github` effect, be sure check it out!
 * Fix dozen of bugs.
 
