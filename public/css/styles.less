@@ -77,6 +77,7 @@ html {
 	text-rendering: optimizeLegibility;
 	height: 100%;
 	background: @pl5;
+	overflow-x: hidden
 }
 body {
 	width: 80%;
@@ -228,6 +229,8 @@ footer {
 		}
 		&:active{
 			.box-shadow(inset, 0, 0, 7px, #222);
+			top: 1px;
+			position: relative;
 		}
 	}
 	small{ font-size: 50%;}
@@ -352,7 +355,117 @@ footer {
   .sharrre .box:hover .middle{
     width:90px;
   }
+.forkit {
+	position: absolute;
+	right: 0;
+	top: 0;
 
+	width: 200px;
+	height: 150px;
+
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+	.tag {
+		display: block;
+		height: 30px;
+		width: 200px;
+
+		color: #fff;
+		background: #aa0000;
+		text-align: center;
+		font-size: 13px;
+		font-weight: bold;
+		line-height: 30px;
+		box-shadow: 0px 0px 10px rgba( 0, 0, 0, 0.4 );
+
+		-webkit-transform-origin: 15px 0px;
+		   -moz-transform-origin: 15px 0px;
+		    -ms-transform-origin: 15px 0px;
+		     -o-transform-origin: 15px 0px;
+		        transform-origin: 15px 0px;
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 196px;
+			height: 26px;
+			margin: 1px;
+			border: 1px solid rgba( 255, 255, 255, 0.4 );
+		}
+	}
+	.string {
+		display: block;
+		height: 1px;
+		width: 0px;
+		position: absolute;
+
+		background: rgba( 255, 255, 255, 0.7 );
+		box-shadow: 0px 0px 10px rgba( 0, 0, 0, 0.4 );
+		-webkit-transform-origin: 0px 0px;
+		   -moz-transform-origin: 0px 0px;
+		    -ms-transform-origin: 0px 0px;
+		     -o-transform-origin: 0px 0px;
+		        transform-origin: 0px 0px;
+	}
+}
+
+.forkit-curtain {
+	.transition-duration(0);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: -100%;
+	left: 0;
+	padding: 1em 30%;
+	background: rgba( 0, 0, 0, 0.8 );
+	// background: rgba(255,255,255,1);
+	.close-button {
+		position: absolute;
+		right: 2em;
+		top: 1em;
+		font-weight: boldest;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+#repo {
+  text-shadow: none;
+  margin: 3em 0;
+}
+
+#repo h1 a.active, #repo h1 a.active:active, #repo h1 a.active:visited, #repo h1 a.active:hover {
+	color: #fff;
+}
+
+.gh {
+	background:rgb(30, 117, 170) url(../img/octocat-small.png) no-repeat left center;
+	border: 1px solid rgb(19, 89, 132);
+	box-shadow: 0 0 9px rgb(119, 203, 255);
+	background-position: 2em;
+	color: #fff;
+	text-shadow: 0 -1px 0 #333;
+	text-align: center;
+	padding: 1em 5em;
+	margin-left: 3em;
+	font-size: 20px;
+	line-height: 40px;
+	.border-radius(5px);
+	&:hover {
+		color: #ddd;
+		background:rgb(25, 113, 168) url(../img/octocat-small.png) no-repeat left center;
+		box-shadow: 0 0 20px rgb(119, 203, 255);
+		border: solid 1px rgb(19, 89, 132);
+		background-position: 2em;
+	}
+	a:active {
+		position: relative;
+		top: 1px;
+	}
+}
 /*--------------------
 ---- media queries ---
 --------------------*/
