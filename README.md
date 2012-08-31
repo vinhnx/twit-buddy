@@ -34,6 +34,10 @@ A simpple app to check following status, & to check whether if you two are follo
 * Add [Sharrre Social Plugins](http://sharrre.com) for Social Network sharing.
 * Fix form bugs.
 
+### Verion 1.19 (NEW!):
+* Cool new `Fork me on github` effect, be sure check it out!
+* Fix dozen of bugs.
+
 ## Todos:
 * Adding more features...
 * Tweak performance...
